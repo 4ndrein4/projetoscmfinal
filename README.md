@@ -43,11 +43,12 @@ Cada parte contém:
 
 1. O site está publicado no GitHub Pages.  
 2. Acesse o link em qualquer navegador para explorar:
+   https://4ndrein4.github.io/projetoscmfinal/
    - **Home:** informações sobre a empresa e missão.
    - **Serviços:** cards detalhados com Hardware, Software e Redes.
    - **Abrir Chamado:** formulário de manutenção.
-3. Todos os arquivos (HTML, CSS, imagens) estão carregados automaticamente.
-4. Não é necessário instalar nada localmente para visualizar o site.
+4. Todos os arquivos (HTML, CSS, imagens) estão carregados automaticamente.
+5. Não é necessário instalar nada localmente para visualizar o site.
 
 ## Observações
 
