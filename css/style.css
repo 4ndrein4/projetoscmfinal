@@ -1,35 +1,38 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIÁVEIS */
 :root {
     --verde: #007d02;
+    --verde-escuro: #004202;
     --vermelho: #c20000;
     --cinza: #2e2e2e;
+    --cinza-claro: #444;
     --branco: #ffffff;
 }
 
+/* BASE */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--cinza);
     color: var(--branco);
 }
 
+main {
+    padding: 20px;
+}
+
+/* HEADER */
 header {
     background-color: var(--verde);
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-footer {
-    background-color: var(--vermelho);
-    padding: 10px;
-    text-align: center;
-    margin-top: 30px;
 }
 
 nav a {
@@ -43,10 +46,15 @@ nav a:hover {
     color: #dcdcdc;
 }
 
-main {
-    padding: 20px;
+/* FOOTER */
+footer {
+    background-color: var(--vermelho);
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
 }
 
+/* CARDS GENÉRICOS */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -54,7 +62,7 @@ main {
 }
 
 .card {
-    background-color: #444;
+    background-color: var(--cinza-claro);
     padding: 15px;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -70,6 +78,7 @@ main {
     border-radius: 5px;
 }
 
+/* FORMULÁRIOS */
 form {
     max-width: 500px;
 }
@@ -85,6 +94,7 @@ input, select, textarea {
     margin-top: 5px;
 }
 
+/* BOTÃO PADRÃO */
 button {
     margin-top: 15px;
     padding: 10px;
@@ -96,20 +106,10 @@ button {
 }
 
 button:hover {
-    background-color: #004202;
+    background-color: var(--verde-escuro);
 }
 
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
+/* CHECKBOX */
 .checkbox-urgente {
     display: flex;
     align-items: center;
@@ -120,4 +120,126 @@ button:hover {
 .checkbox-urgente input {
     width: auto;
     margin: 0;
+}
+
+/* LOJA */
+.loja-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FILTROS */
+.filtros {
+    background-color: #3a3a3a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.filtros button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* VITRINE */
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* PRODUTOS */
+.card-produto {
+    position: relative;
+    background-color: var(--cinza-claro);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-produto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* BADGES */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.badge.oferta {
+    background-color: var(--vermelho);
+}
+
+.badge.novo {
+    background-color: var(--verde);
+}
+
+/* PREÇOS */
+.preco-antigo {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.preco-novo {
+    color: var(--verde);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BOTÃO COMPRAR (LOJA E PRODUTO) */
+.btn-comprar {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+/* PRODUTO DETALHE */
+.produto-detalhe {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.produto-detalhe img {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .loja-container {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-detalhe {
+        flex-direction: column;
+        text-align: center;
+    }
 }
