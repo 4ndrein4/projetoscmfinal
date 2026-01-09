@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoTech IFPB - Loja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>InfoTech IFPB</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="chamado.html">Abrir Chamado</a>
+        <a href="loja.html">Loja</a>
+        <span id="contador-carrinho">🛒 Carrinho (0)</span>
+    </nav>
+</header>
+
+<main class="loja-container">
+
+    <aside class="filtros">
+        <h3>Categorias</h3>
+
+        <button class="btn-filtro" data-filtro="todos">Todos</button>
+        <button class="btn-filtro" data-filtro="hardware">Hardware</button>
+        <button class="btn-filtro" data-filtro="software">Software</button>
+        <button class="btn-filtro" data-filtro="redes">Redes</button>
+    </aside>
+
+    <section class="vitrine">
+
+        <article class="card-produto produto" data-category="hardware">
+            <span class="badge oferta">OFERTA</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/rtx4060.png" alt="Placa de Vídeo RTX 4060">
+            </a>
+            <h4>RTX 4060 6GB</h4>
+            <p class="preco-antigo">De R$ 3.499,00</p>
+            <p class="preco-novo">Por R$ 2.999,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="card-produto produto" data-category="hardware">
+            <span class="badge novo">NOVO</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/ryzen7.png" alt="Processador Ryzen 7">
+            </a>
+            <h4>Ryzen 7 5800X</h4>
+            <p class="preco-antigo">De R$ 2.200,00</p>
+            <p class="preco-novo">Por R$ 1.899,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="card-produto produto" data-category="software">
+            <span class="badge oferta">OFERTA</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/ssd.png" alt="SSD NVMe">
+            </a>
+            <h4>SSD NVMe 1TB</h4>
+            <p class="preco-antigo">De R$ 650,00</p>
+            <p class="preco-novo">Por R$ 529,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="card-produto produto" data-category="redes">
+            <span class="badge oferta">OFERTA</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/roteador.png" alt="Roteador Mesh">
+            </a>
+            <h4>Roteador Mesh</h4>
+            <p class="preco-antigo">De R$ 899,00</p>
+            <p class="preco-novo">Por R$ 749,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="card-produto produto" data-category="hardware">
+            <span class="badge oferta">OFERTA</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/fonte.png" alt="Fonte 750W">
+            </a>
+            <h4>Fonte 750W 80 Plus</h4>
+            <p class="preco-antigo">De R$ 599,00</p>
+            <p class="preco-novo">Por R$ 499,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="card-produto produto" data-category="redes">
+            <span class="badge novo">NOVO</span>
+            <a href="produto.html" class="link-produto">
+             <img src="img/placamae.png" alt="Placa-mãe Gamer">
+            </a>
+            <h4>Placa-mãe Gamer B550</h4>
+            <p class="preco-antigo">De R$ 1.100,00</p>
+            <p class="preco-novo">Por R$ 949,00</p>
+            <button class="btn-comprar">Comprar</button>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 - InfoTech IFPB</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script> window.chtlConfig = { chatbotId: "7779834585" } </script>
+<script async data-id="7779834585" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+</body>
+</html>
